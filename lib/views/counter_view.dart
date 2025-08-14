@@ -17,24 +17,6 @@ class CounterView extends StatelessWidget {
               'Contador: ${counterViewModel.counter}', 
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            const SizedBox(height: 20), // Un poco de espacio
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                ElevatedButton(
-                  onPressed: () {
-                    counterViewModel.decrement();
-                  },
-                  child: const Icon(Icons.remove),
-                ),
-                ElevatedButton(
-                  onPressed: () {
-                    counterViewModel.increment();
-                  },
-                  child: const Icon(Icons.add),
-                ),
-              ],
-            ),
           ],
         ),
       ),
