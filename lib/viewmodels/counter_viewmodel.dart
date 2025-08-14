@@ -8,16 +8,18 @@ class CounterViewModel extends ChangeNotifier {
   final CounterModel model = CounterModel(0);
 
   // 2. Exponer los datos a la Vista
-  int get count => model.count;
+  int get counter => model.count;
 
   // 3. Proveer las funciones de lógica
   void increment() {
-    model.count++;
+    //model.count++;
+    model.incrementar();
     notifyListeners(); // Notifica a la Vista que hubo un cambio
   }
 
   void decrement() {
-    model.count--;
+    //model.count--;
+    model.decrementar();
     notifyListeners(); // Notifica a la Vista que hubo un cambio
   }
 }

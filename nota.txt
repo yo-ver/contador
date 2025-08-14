@@ -1,0 +1,10 @@
+import 'package:contador/viewmodels/counter_viewmodel.dart';
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+
+final counterViewModel = Provider.of<CounterViewModel>(context);
+
+'${counterViewModel.count}'
+
+counterViewModel.increment();
